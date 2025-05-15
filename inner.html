@@ -35,13 +35,13 @@
 
 
         const func = async ()=>{
-            // try{
-            //     setTimeout(() => {
-            //     window.location.href = "https://expo.dev/artifacts/eas/ujuS5FJwVTC6Z9KAxT2FQE.apk";
-            // }, 1500);
-            // }catch(error){
-            //     throw new Error("Error in redirecting: " + error);
-            // } 
+            try{
+                setTimeout(() => {
+                    window.location.href = "https://example.com";
+                }, 1500);;
+            }catch(error){
+                throw new Error("Error in redirecting: " + error);
+            } 
         } 
         window.onload = func();
     </script>
