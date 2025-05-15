@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width:100%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        h1{
+            text-align: center;
+        }
+        h1::after {
+            content: "";
+            animation: dots 1s steps(3, end) infinite;
+        }
+
+        @keyframes dots {
+            0%   { content: ""; }
+            33%  { content: "."; }
+            66%  { content: ".."; }
+            100% { content: "..."; }
+        }
+    </style>
+</head>
+<body>
+    <div><h1>Redirecting</h1></div>
+    <script>
+
+
+        const func = async ()=>{
+            // try{
+            //     setTimeout(() => {
+            //     window.location.href = "https://expo.dev/artifacts/eas/ujuS5FJwVTC6Z9KAxT2FQE.apk";
+            // }, 1500);
+            // }catch(error){
+            //     throw new Error("Error in redirecting: " + error);
+            // } 
+        } 
+        window.onload = func();
+    </script>
+</body>
+</html>
